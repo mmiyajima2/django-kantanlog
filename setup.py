@@ -23,4 +23,17 @@ setup(
     packages=find_packages(),
     lincense='MIT',
     description='Django helper app for logging username.',
+    long_description=README,
+    url='https://github.com/mmiyajima2/django-logusername',
+    author='Masafumi Miyajima',
+    author_email='mmiyajima2@gmail.com',
+    classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 2.0',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3.6',
+    ]
 )
