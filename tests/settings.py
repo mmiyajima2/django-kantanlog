@@ -124,11 +124,7 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verb': {
-            'format': (
-                'lv=%(levelname)s '
-                'pid=%(process)d '
-                'tid=%(thread)d '
-                'msg=%(message)s')
+            'format': '%(levelname)s %(message)s'
         },
     },
     'handlers': {
@@ -140,7 +136,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console'],
-            'level': 'WARNING',
+            'level': 'ERROR',
             'propagate': True,
         },
         'tests': {
