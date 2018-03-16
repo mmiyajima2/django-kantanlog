@@ -7,17 +7,32 @@ from logging import getLogger
 logger = getLogger(__name__)
 
 
-class IndexView(View):
+class CreateView(View):
 
     http_method_names = [
-        'get',
+        'post',
     ]
 
-    def get(self, request, *args, **kwargs):
-        logger.info('tests index...')
-        tobject = TObject(name='XYZ')
+    def post(self, request, *args, **kwargs):
+        tobject = TObject(name='init', level=1)
         res = tobject.save()
         return HttpResponse(
             '{"res": "%s"}' % str(res),
+            content_type='application/json'
+        )
+
+
+class UpdateView(View):
+
+    http_method_names = [
+        'post',
+    ]
+
+    def post(self, request, *args, **kwargs):
+        tobject = TObject.objects.get(name='original')
+        tobject.level = 777
+        tobject.save()
+        return HttpResponse(
+            '{"res": "OK"}',
             content_type='application/json'
         )

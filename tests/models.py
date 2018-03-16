@@ -9,6 +9,15 @@ class TObject(models.Model):
     name = models.CharField(
         verbose_name="name",
         max_length=100,
+        unique=True,
+        null=False,
+        blank=False,
+    )
+
+    level = models.IntegerField(
+        verbose_name="level",
+        null=False,
+        blank=False,
     )
 
     def __str__(self):

@@ -14,9 +14,10 @@ class LogusernameMiddleware:
 
     def __call__(self, request):
 
+        logger.debug('LogusernameMiddleware called')
+
         if hasattr(request, 'user'):
             _tl.username = getattr(request.user, 'username', '')
-    
         response = self.get_response(request)
 
         if hasattr(_tl, 'username'):

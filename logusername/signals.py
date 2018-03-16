@@ -11,8 +11,10 @@ logger = getLogger(__name__)
 
 @receiver(pre_save)
 def logusername(sender, **kwargs):
+    if kwargs['raw']:
+        logger.info('raw at pre_save')
+        return
     instance = kwargs['instance']
-    logger.debug(sender.__module__)
     if sender.__module__ not in settings.LOGUSERNAME_TARGET_MODNAMES:
         return
     if hasattr(instance, 'created_by') and not getattr(instance, 'created_by'):

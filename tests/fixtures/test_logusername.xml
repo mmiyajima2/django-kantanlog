@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects>
+  <object model="tests.tobject" pk="1">
+    <field name="name" type="CharField">original</field>
+    <field name="level" type="IntegerField">-1</field>
+    <field name="created_by" type="CharField">me</field>
+    <field name="updated_by" type="CharField">me</field>
+  </object>
+</django-objects>
