@@ -5,3 +5,5 @@ staticfiles
 tmp
 .coverage
 htmlcov/
+.tox/
+*.egg-info/

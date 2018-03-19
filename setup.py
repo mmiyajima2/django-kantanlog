@@ -27,6 +27,9 @@ setup(
     url='https://github.com/mmiyajima2/django-logusername',
     author='Masafumi Miyajima',
     author_email='mmiyajima2@gmail.com',
+    install_requires=[
+        'django>=2.0',
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
