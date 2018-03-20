@@ -8,6 +8,6 @@ install:
 
 script:
     - pipenv run coverage run --source="./logusername" runtests.py
-    - pipenv run coverage report -m --include="./logusername.py"
-    - pipenv run coverage html --include="./logusername.py"
+    - pipenv run coverage report -m --include="./logusername/*.py"
+    - pipenv run coverage html --include="./logusername/*.py"
     - pipenv run flake8 --statistics
