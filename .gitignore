@@ -7,3 +7,5 @@ tmp
 htmlcov/
 .tox/
 *.egg-info/
+build/
+dist/
