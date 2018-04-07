@@ -1,23 +1,16 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [requires]
-
 python_version = "3.6"
 
-
 [packages]
-
-django = "==2.0"
-
+Django = "==2.0"
 
 [dev-packages]
-
 jedi = "*"
 "flake8" = "*"
-coverage = "*"
 twine = "*"
+coveralls = "*"

@@ -3,11 +3,7 @@ python:
     - "3.6"
 
 install:
-    - pip install pipenv
-    - pipenv install --dev
+    - pip install tox-travis
 
 script:
-    - pipenv run coverage run --source="./logusername" runtests.py
-    - pipenv run coverage report -m --include="./logusername/*.py"
-    - pipenv run coverage html --include="./logusername/*.py"
-    - pipenv run flake8 --statistics
+    - tox
