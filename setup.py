@@ -18,8 +18,8 @@ os.chdir(
 
 
 setup(
-    name='django-logusername',
-    version='0.1',
+    name='djangologusername',
+    version='0.0.1',
     packages=find_packages(),
     lincense='MIT',
     description='Django helper app for logging username.',
@@ -28,15 +28,17 @@ setup(
     author='Masafumi Miyajima',
     author_email='mmiyajima2@gmail.com',
     install_requires=[
-        'django>=2.0',
+        'django',
     ],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 2.0',
+        'Framework :: Django :: 2.1',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ]
 )
