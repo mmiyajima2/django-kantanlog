@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 from django.db import models
-from logusername.decorators import cbyuby
+from kantanlog.decorators import cbyuby
 
 
 @cbyuby

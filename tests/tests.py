@@ -9,9 +9,9 @@ from .models import TObject
 logger = getLogger(__name__)
 
 
-class LogusernameTests(TestCase):
+class KantanlogTests(TestCase):
 
-    fixtures = ['test_logusername.xml']
+    fixtures = ['test_kantanlog.xml']
 
     def setUp(self):
         logger.debug('log user name test name')

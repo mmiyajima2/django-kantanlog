@@ -1,10 +1,9 @@
-# -*- coding: utf8 -*-
 from django.apps import AppConfig
 
 
-class LogusernameConfig(AppConfig):
+class KantanlogConfig(AppConfig):
 
-    name = 'logusername'
+    name = 'kantanlog'
 
     def ready(self):
         from . import signals # noqa

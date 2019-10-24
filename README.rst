@@ -1,5 +1,5 @@
 ============
-Log Username
+Kantan Log
 ============
 
 .. image:: https://travis-ci.org/mmiyajima2/django-logusername.svg?branch=master
@@ -9,8 +9,8 @@ Log Username
     :target: https://coveralls.io/github/mmiyajima2/django-logusername?branch=master
 
 
-Log username is a simple Django helper app.
-This app supports logging to Django Model's created_by, updated_by.
+Kantan log is a simple Django helper app.
+This app supports logging to Django Model's created_by, updated_by and http requests interception.
 
 
 Quick Start

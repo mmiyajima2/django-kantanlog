@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'logusername.apps.LogusernameConfig',
+    'kantanlog.apps.KantanlogConfig',
     'tests',
 ]
 
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'logusername.middlewares.LogusernameMiddleware',
+    'kantanlog.middlewares.KantanlogMiddleware',
 ]
 
 ROOT_URLCONF = 'tests.urls'
@@ -144,7 +144,7 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
-        'logusername': {
+        'kantanlog': {
             'handlers': ['console'],
             'level': 'DEBUG',
             'propagate': False,
@@ -152,6 +152,6 @@ LOGGING = {
     }
 }
 
-LOGUSERNAME_TARGET_MODNAMES = (
-    'tests.models',
+KLOG_TARGET_APP_LABELS = (
+    'tests',
 )

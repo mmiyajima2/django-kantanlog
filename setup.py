@@ -18,13 +18,13 @@ os.chdir(
 
 
 setup(
-    name='djangologusername',
+    name='djangokantanlog',
     version='0.0.1',
     packages=find_packages(),
     lincense='MIT',
-    description='Django helper app for logging username.',
+    description='Django helper app for logging ID.',
     long_description=README,
-    url='https://github.com/mmiyajima2/django-logusername',
+    url='https://github.com/mmiyajima2/django-kantanlog',
     author='Masafumi Miyajima',
     author_email='mmiyajima2@gmail.com',
     install_requires=[
@@ -35,6 +35,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 2.1',
+        'Framework :: Django :: 2.2',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
