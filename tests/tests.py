@@ -18,6 +18,10 @@ class KantanlogTests(TestCase):
         self.client.logout()
         User.objects.create_user('temp', 'temp@local', 'temp')
 
+    def test_profile(self):
+        response = self.client.get(reverse('profile'))
+        self.assertEqual(response.status_code, 200)
+
     def test_cby(self):
         logger.debug('test cby')
         self.client.login(username='temp', password='temp')

@@ -8,11 +8,7 @@ class KantanlogDefaultBackend:
     def __init__(self):
 
         required_middleware = 'kantanlog.middlewares.KantanlogMiddleware'
-
-        if hasattr(settings, 'MIDDLEWARE'):
-            middlewares = settings.MIDDLEWARE
-        else:
-            middlewares = settings.MIDDLEWARE_CLASSES
+        middlewares = settings.MIDDLEWARE
 
         if required_middleware not in middlewares:
             raise ImproperlyConfigured(

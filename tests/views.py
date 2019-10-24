@@ -7,6 +7,20 @@ from logging import getLogger
 logger = getLogger(__name__)
 
 
+class ProfileView(View):
+
+    http_method_names = [
+        'get',
+    ]
+
+    def get(self, request, *args, **kwargs):
+        u = str(request.user)
+        return HttpResponse(
+            ('{"username": "%s"}' % u),
+            content_type='application/json',
+        )
+
+
 class CreateView(View):
 
     http_method_names = [
