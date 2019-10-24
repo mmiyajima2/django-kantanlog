@@ -11,7 +11,7 @@ Kantan Log
 
 
 Kantan log is a simple Django helper app.
-This app supports logging to Django Model's created_by, updated_by and http requests interception.
+This app supports logging to Django Model's created_by, updated_by. At http requests interception, too.
 
 
 Installation

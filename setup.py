@@ -19,7 +19,7 @@ os.chdir(
 
 setup(
     name='djangokantanlog',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     lincense='MIT',
     description='Django helper app for logging ID.',
