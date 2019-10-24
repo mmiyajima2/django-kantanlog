@@ -21,7 +21,11 @@ class KantanlogTests(TestCase):
     def test_cby(self):
         logger.debug('test cby')
         self.client.login(username='temp', password='temp')
-        response = self.client.post(reverse('create'))
+        response = self.client.post(
+            reverse('create'),
+            {},
+            HTTP_X_FORWARDED_FOR='127.0.0.2',
+        )
         tv = TObject.objects.get(name='init')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(tv.level, 1)
