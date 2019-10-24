@@ -10,7 +10,6 @@ script:
 - tox
 deploy:
   provider: pypi
-  server: https://upload.pypi.org/legacy/
   user: __token__
   skip_cleanup: true
   distributions: sdist bdist_wheel
