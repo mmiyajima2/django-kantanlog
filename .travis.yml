@@ -11,9 +11,7 @@ script:
 deploy:
   provider: pypi
   server: https://upload.pypi.org/legacy/
-  user: mmiyajima2
-  password:
-    secure: qDeRjPv3we40n4nDkrkIkuFAKptxVt+G8bG/G/gbG6djHWqhW43ynq6TV/GujjjwR3C6bQA0HuWyu+UB3od3lkM6OyNy+NkNX0zCEebu5/S5JYpZXnHW581Gx7as4Rn/uA9vyfuVzgTnivuvrIqAgzS/OPcWyJmelCy2iDuqhV1hAOcepMO3DO9L02348zDU5jLDDEKr91nu1r9002oNihWFdanAMcfMBv4txXJ56WsEO4lbwn+6SuB1Zc1QkQ50JZNkGZ+khm/x2oqfV86Uwnlwh6J01rxJJk6Z9S0ZamBH1QV0MCGjfFeoSWc8Sn8aZR1luWpOBw6EcEbqHBDPBdeqpioqAT8lS7hP6Arv5uBvMpF1h8wz3ghjxYbj+OIitr46Yk33pli4l4fTeU9kh3DzeGC81EsUoiT0hB0L6u6PZVHicYf554DoubDBgIwNNapefPQiTxhVGRbLnoa+1UKGGT5vFZGKgNTwObjO8jlIIuunj1/yhP/Jw3WqlZSE4ZVuAfIgXGvLxmS0HzVsSr+va3fQ7d3cbnHBZUAB0C3gWOVLEP7ggyWKxiZ5h0mILgvy9xloigCmyeFSmU9SZje3HNZayR1s66nV6aeerCGb9yOFdj32SnVuhSJ1DLe+3Np6bUdB1TeNP2ZcyDnMvsQkONIXrJPATt20TuvmLHA=
+  user: '__token__'
   skip_cleanup: true
   distributions: sdist bdist_wheel
   on:
