@@ -48,7 +48,7 @@ Settings
 KLOG_TARGET_APP_LABELS
 -------------------------
 
-Default: ``None``
+Default: ``()``
 
 Target apps, settings as app-label:
 
@@ -62,13 +62,18 @@ Target apps, settings as app-label:
 KLOG_BACKEND
 ---------------
 
-Default: ``None``
+Default: ``kantanlog.backends.KantanlogDefaultBackend``
 
 As interface, getting user.
 
 e.g.
 
 .. code:: python
+
+  # at settings.py
+  KLOG_BACKEND = 'dotted.path.to.MyappBackend'
+
+  ...
 
   # -*- coding: utf8 -*-
   from logging import getLogger

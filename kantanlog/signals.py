@@ -6,6 +6,11 @@ from .middlewares import get_username
 
 
 logger = getLogger(__name__)
+_labels = getattr(
+    settings,
+    'KLOG_TARGET_APP_LABELS',
+    (),
+)
 
 
 @receiver(pre_save)
@@ -13,7 +18,7 @@ def log_cbyuby(sender, **kwargs):
     if kwargs['raw']:
         return
     instance = kwargs['instance']
-    if not (instance._meta.app_label in settings.KLOG_TARGET_APP_LABELS):
+    if not (instance._meta.app_label in _labels):
         return
     username = get_username()
     if not username:
